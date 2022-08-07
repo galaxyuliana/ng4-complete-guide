@@ -2,7 +2,11 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-servers',
-  templateUrl: './servers.component.html',
+  // every component must have template or templateUrl
+  // Using external HTML file would be better if you need more than 3 lines of HTML code
+  template: `
+    <app-server></app-server>
+    <app-server></app-server>`,
   styleUrls: ['./servers.component.css']
 })
 export class ServersComponent implements OnInit {
