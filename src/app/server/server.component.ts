@@ -5,7 +5,12 @@ import { Component } from '@angular/core'
 // decorator uses @
 @Component({
     selector: 'app-server',
-    templateUrl: './server.component.html'
+    templateUrl: './server.component.html',
+    styles: [`
+        .online {
+            color: white;
+        }
+    `]
 })
 
 // export class to use it from outside
